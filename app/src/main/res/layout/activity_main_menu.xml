@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@mipmap/main_menu_bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kk.elts2.activities.MainMenu">
+
+    <ImageView
+        android:id="@+id/ivMain_menu_tilte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/main_menu_title" />
+
+    <TableLayout
+        android:id="@+id/tl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivMain_menu_tilte"
+        android:paddingTop="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/exam_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_menu_btn_color"
+                android:drawableTop="@mipmap/main_menu_exam"
+                android:gravity="center"
+                android:paddingEnd="45dp"
+                android:text="开始考试" />
+
+            <Button
+                android:id="@+id/exam_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_menu_btn_color"
+                android:drawableTop="@mipmap/main_menu_result"
+                android:gravity="center"
+                android:paddingStart="45dp"
+                android:text="查询成绩" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl1"
+        android:paddingTop="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/exam_rule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_menu_btn_color"
+                android:drawableTop="@mipmap/main_menu_message"
+                android:gravity="center"
+                android:paddingEnd="45dp"
+                android:text="考试规则" />
+
+            <Button
+                android:id="@+id/exam_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_menu_btn_color"
+                android:drawableTop="@mipmap/main_menu_exit"
+                android:gravity="center"
+                android:paddingStart="45dp"
+                android:text="退出考试" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl2"
+        android:gravity="center_horizontal"
+        android:text="欢迎XXX来考试！"
+        android:textColor="@color/welcome_color"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

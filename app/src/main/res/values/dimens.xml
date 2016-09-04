@@ -5,4 +5,6 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="textSize">20dp</dimen>
     <dimen name="rbtnTextSize">20dp</dimen>
+    <dimen name="exam_fontsize">17sp</dimen>
+    <dimen name="answer_checkboxMargin">10dp</dimen>
 </resources>

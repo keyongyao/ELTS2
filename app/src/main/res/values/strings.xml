@@ -1,5 +1,14 @@
 <resources>
-    <string name="app_name">ELTS2</string>
+
+    <string name="examInfo">考试科目：core java    考生编号：1001\n
+                            考试时间：10 分钟        考题数量：20</string>
+    <string name="question">1.能直接由计算机硬件识别的是______。\n
+A.高级语言\n
+B.中级语言\n
+C.汇编语言\n
+D.机器语言    </string>
+
+    <string name="app_name">在线考试</string>
     <string name="action_settings">Settings</string>
 
 
@@ -24,7 +33,7 @@
     <string name="title_activity_login">登录窗口</string>
     <string name="title_activity_exam">考试窗口</string>
     <string name="title_activity_main_menu">考试主窗口</string>
-
+    <string name="exam_ruler">""</string>
 
 
 </resources>

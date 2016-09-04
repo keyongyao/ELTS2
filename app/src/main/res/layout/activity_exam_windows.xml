@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/exam_bg"
+    android:orientation="vertical"
+    tools:context="com.kk.elts2.activities.ExamWindows">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@mipmap/exam_title" />
+
+    <TextView
+        android:id="@+id/tvExaminfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:text="@string/examInfo"
+        android:textSize="@dimen/exam_fontsize" />
+
+    <EditText
+        android:id="@+id/etQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="13dp"
+        android:background="@mipmap/exam_question_content"
+        android:editable="false"
+        android:paddingLeft="70dp"
+        android:text="点击下面题号以获取题目"
+        android:textSize="@dimen/exam_fontsize" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="25dp">
+
+            <CheckBox
+                android:id="@+id/cbA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/answer_checkboxMargin"
+                android:text="A" />
+
+            <CheckBox
+                android:id="@+id/cbB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/answer_checkboxMargin"
+                android:text="B" />
+
+            <CheckBox
+                android:id="@+id/cbC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/answer_checkboxMargin"
+                android:text="C" />
+
+            <CheckBox
+                android:id="@+id/cbD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/answer_checkboxMargin"
+                android:text="D" />
+
+        </TableRow>
+
+    </RadioGroup>
+
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spacing="1dp">
+
+    </Gallery>
+
+    <TextView
+        android:id="@+id/tvleftTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="剩余时间：10:32" />
+
+
+</LinearLayout>
